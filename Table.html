@@ -1,0 +1,31 @@
+<html>
+ <head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <title>Table Form</title>
+ <script>
+
+function setWhat(){
+alert("Registration success");
+}
+
+function setNumT(){
+document.getElementById("name").innerHTML="Nadeesha";
+document.getElementById("age").innerHTML = "23";
+}
+
+
+</script>
+</head>
+<body>
+<br><br><br>
+<H1 align="center">Registration Form</H1><br><br><br>
+<form align="center" action="/studentss" method="post">
+<input type="number" id="ids" placeholder="ID" required onkeypress="setNumT()"><br><br>
+<input type="text" id="name" placeholder="Name" required onkeypress="setNumT()"><br><br>
+<input type="number" id="age" placeholder="Age" required onkeypress="setNumT()"><br><br><br>
+<input type="submit" id ="submit" onclick="setWhat()" value="SIGN IN">
+</form>
+
+
+</body>
+</html>
